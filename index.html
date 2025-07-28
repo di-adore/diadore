@@ -1,191 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Di Adore Products</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Di Adore - Christian Devotional Store</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f4f9;
       margin: 0;
-      padding: 0;
+      background: #f0f4f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #4A148C;
+      color: white;
+      padding: 1rem;
       text-align: center;
     }
 
-    h2 {
-      margin-top: 20px;
-      color: #444;
+    .welcome {
+      padding: 2rem;
+      text-align: center;
+      background-color: #ede7f6;
     }
 
-    .category {
-      margin: 20px 0;
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 2rem;
     }
 
-    .product-card {
-      display: inline-block;
-      margin: 15px;
+    .product {
       background: white;
-      padding: 10px;
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      width: 160px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 200px;
+      text-align: center;
       transition: transform 0.3s;
-      cursor: pointer;
     }
 
-    .product-card:hover {
+    .product:hover {
       transform: scale(1.05);
     }
 
-    .product-card img {
+    .product img {
       width: 100%;
       height: auto;
-      border-radius: 10px;
     }
 
-    .product-card p {
-      margin: 8px 0;
+    .product-name {
+      padding: 0.5rem;
       font-weight: bold;
     }
 
-    .whatsapp-link {
-      display: inline-block;
-      margin-top: 5px;
-      background-color: #25D366;
+    .product button {
+      background-color: #4A148C;
       color: white;
-      padding: 6px 10px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    /* Popup */
-    .popup {
-      display: none;
-      position: fixed;
-      z-index: 999;
-      left: 0; top: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.6);
-    }
-
-    .popup-content {
-      background: white;
-      margin: 10% auto;
-      padding: 20px;
-      width: 90%;
-      max-width: 400px;
-      border-radius: 15px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-      text-align: center;
-    }
-
-    .close-btn {
-      color: red;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
       cursor: pointer;
+    }
+
+    footer {
+      background-color: #4A148C;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .categories {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
+
 <body>
+  <header>
+    <h1>Welcome to Di Adore</h1>
+    <p>Christian Devotional Articles</p>
+  </header>
 
-  <h2>Welcome to Di'Adore</h2>
-  <p>Explore our beautiful Christian devotional collections</p>
-
-  <!-- Althar -->
-  <div class="category">
-    <h3>Althar</h3>
-    <div class="product-card" onclick="openPopup('altharPopup')">
-      <img src="https://img.eselt.de/img/18223205_Aj1KT93eDSYpE3pG/ad.jpg" alt="Altar">
-      <p>Altar</p>
-      <a class="whatsapp-link" href="https://wa.me/919074086052?text=I'm%20interested%20in%20the%20Altar%20Cross" target="_blank">Enquire</a>
-    </div>
+  <div class="welcome">
+    <h2>Bring Devotion to Your Home</h2>
+    <p>Explore our exclusive handcrafted collections.</p>
   </div>
 
-  <!-- Statue -->
-  <div class="category">
-    <h3>Statue</h3>
-    <div class="product-card" onclick="openPopup('statuePopup')">
-      <img src="https://img.eselt.de/img/18223206_vNihDVgKAk4DVkXs/ad.jpg" alt="Jesus Statue">
-      <p>Jesus Statue</p>
-      <a class="whatsapp-link" href="https://wa.me/919074086052?text=I'm%20interested%20in%20the%20Jesus%20Statue" target="_blank">Enquire</a>
+  <section class="categories">
+    <!-- Altar Category -->
+    <div class="product">
+      <img src="https://i.ibb.co/Mx7v50x/IMG-20240727-140600.jpg" alt="Altar Product 1">
+      <div class="product-name">Altar Product 1</div>
+      <a href="https://wa.me/91XXXXXXXXXX?text=I%20am%20interested%20in%20Altar%20Product%201"><button>Contact on WhatsApp</button></a>
     </div>
-  </div>
 
-  <!-- Photo Frame -->
-  <div class="category">
-    <h3>Photo Frame</h3>
-    <div class="product-card" onclick="openPopup('photoPopup')">
-      <img src="https://img.eselt.de/img/18223216_vHtgX1UXBY5UEGoD/ad.jpg" alt="Divine Photo Frame">
-      <p>Divine Photo Frame</p>
-      <a class="whatsapp-link" href="https://wa.me/919876543210?text=I'm%20interested%20in%20the%20Divine%20Photo%20Frame" target="_blank">Enquire</a>
+    <div class="product">
+      <img src="https://i.ibb.co/JjkvNmf/IMG-20240727-140653.jpg" alt="Altar Product 2">
+      <div class="product-name">Altar Product 2</div>
+      <a href="https://wa.me/91XXXXXXXXXX?text=I%20am%20interested%20in%20Altar%20Product%202"><button>Contact on WhatsApp</button></a>
     </div>
-  </div>
 
-  <!-- Flower Vase -->
-  <div class="category">
-    <h3>Flower Vase</h3>
-    <div class="product-card" onclick="openPopup('vasePopup')">
-      <img src="https://img.eselt.de/img/18223224_7np34myHvUV5pbay/ad.jpg" alt="Decorative Vase">
-      <p>Decorative Vase</p>
-      <a class="whatsapp-link" href="https://wa.me/919074086052?text=I'm%20interested%20in%20the%20Decorative%20Vase" target="_blank">Enquire</a>
+    <div class="product">
+      <img src="https://i.ibb.co/qLhxW8r/IMG-20240727-140707.jpg" alt="Altar Product 3">
+      <div class="product-name">Altar Product 3</div>
+      <a href="https://wa.me/91XXXXXXXXXX?text=I%20am%20interested%20in%20Altar%20Product%203"><button>Contact on WhatsApp</button></a>
     </div>
-  </div>
 
-  <!-- POPUPS -->
-
-  <div id="altharPopup" class="popup">
-    <div class="popup-content">
-      <span class="close-btn" onclick="closePopup('altharPopup')">&times;</span>
-      <h3>Altar Cross</h3>
-      <img src="https://img.eselt.de/img/18223205_Aj1KT93eDSYpE3pG/ad.jpg" style="width:100%; border-radius:10px;">
-      <p>A beautifully crafted Altar Cross made of wood and metal. Ideal for home altar.</p>
-      <a class="whatsapp-link" href="https://wa.me/919074086052?text=I'm%20interested%20in%20the%20Altar%20Cross" target="_blank">Enquire on WhatsApp</a>
+    <div class="product">
+      <img src="https://i.ibb.co/GQXygky/IMG-20240727-140723.jpg" alt="Altar Product 4">
+      <div class="product-name">Altar Product 4</div>
+      <a href="https://wa.me/91XXXXXXXXXX?text=I%20am%20interested%20in%20Altar%20Product%204"><button>Contact on WhatsApp</button></a>
     </div>
-  </div>
 
-  <div id="statuePopup" class="popup">
-    <div class="popup-content">
-      <span class="close-btn" onclick="closePopup('statuePopup')">&times;</span>
-      <h3>Jesus Statue</h3>
-      <img src="https://img.eselt.de/img/18223206_vNihDVgKAk4DVkXs/ad.jpg" style="width:100%; border-radius:10px;">
-      <p>Graceful Jesus statue made of resin, perfect for prayer corners and gifts.</p>
-      <a class="whatsapp-link" href="https://wa.me/919074086052?text=I'm%20interested%20in%20the%20Jesus%20Statue" target="_blank">Enquire on WhatsApp</a>
+    <div class="product">
+      <img src="https://i.ibb.co/ZRrtXHf/IMG-20240727-140739.jpg" alt="Altar Product 5">
+      <div class="product-name">Altar Product 5</div>
+      <a href="https://wa.me/91XXXXXXXXXX?text=I%20am%20interested%20in%20Altar%20Product%205"><button>Contact on WhatsApp</button></a>
     </div>
-  </div>
+  </section>
 
-  <div id="photoPopup" class="popup">
-    <div class="popup-content">
-      <span class="close-btn" onclick="closePopup('photoPopup')">&times;</span>
-      <h3>Divine Photo Frame</h3>
-      <img src="https://img.eselt.de/img/18223216_vHtgX1UXBY5UEGoD/ad.jpg" style="width:100%; border-radius:10px;">
-      <p>Beautifully framed image of Jesus Christ with antique golden design border.</p>
-      <a class="whatsapp-link" href="https://wa.me/919074086052?text=I'm%20interested%20in%20the%20Divine%20Photo%20Frame" target="_blank">Enquire on WhatsApp</a>
-    </div>
-  </div>
-
-  <div id="vasePopup" class="popup">
-    <div class="popup-content">
-      <span class="close-btn" onclick="closePopup('vasePopup')">&times;</span>
-      <h3>Decorative Vase</h3>
-      <img src="https://img.eselt.de/img/18223224_7np34myHvUV5pbay/ad.jpg" style="width:100%; border-radius:10px;">
-      <p>Elegant flower vase with floral carvings. Adds grace to prayer spaces and homes.</p>
-      <a class="whatsapp-link" href="https://wa.me/919074086052?text=I'm%20interested%20in%20the%20Decorative%20Vase" target="_blank">Enquire on WhatsApp</a>
-    </div>
-  </div>
-
-  <!-- JavaScript -->
-  <script>
-    function openPopup(id) {
-      document.getElementById(id).style.display = "block";
-    }
-    function closePopup(id) {
-      document.getElementById(id).style.display = "none";
-    }
-  </script>
-
+  <footer>
+    &copy; 2025 Di Adore | All Rights Reserved
+  </footer>
 </body>
+
 </html>
