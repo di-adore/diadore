@@ -1,182 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <h1 style="text-align: center; color: #6d4c41; padding-top: 20px;">Welcome to Di Adore</h1>
-<p style="text-align: center; font-size: 18px; color: #4e342e;">
-  Discover our handpicked collection of Christian devotional articles, flowers, and statues.  
-  Feel free to explore and message us directly on WhatsApp for any purchase!
-</p>
   <meta charset="UTF-8">
-  <title>Di Adore Products</title>
+  <title>Di Adore - Christian Devotional Store</title>
   <style>
     body {
-      background-color: #f9fafb;
-      font-family: Arial, sans-serif;
-      text-align: center;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #6a1b9a;
+      color: white;
       padding: 20px;
+      text-align: center;
     }
 
-    h2 {
-      color: #2c3e50;
-    }
-
-    .product-gallery {
+    nav {
+      background-color: #4a148c;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
-      margin-top: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .welcome {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #ede7f6;
+    }
+
+    .welcome h2 {
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    .categories {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .category-section {
+      margin-bottom: 50px;
+    }
+
+    .category-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #6a1b9a;
+      border-bottom: 2px solid #ccc;
+      display: inline-block;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
     }
 
     .product {
-      width: 200px;
-      background: #ffffff;
+      background-color: white;
+      border-radius: 10px;
       padding: 10px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
     }
 
     .product:hover {
       transform: scale(1.05);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     }
 
     .product img {
       width: 100%;
-      border-radius: 8px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
     }
 
     .product-name {
-      margin-top: 8px;
+      margin-top: 10px;
       font-weight: bold;
-      color: #333;
     }
 
     .whatsapp-btn {
       display: inline-block;
-      margin-top: 6px;
-      padding: 6px 10px;
-      background-color: #25D366;
+      background-color: #25d366;
       color: white;
-      border: none;
-      border-radius: 6px;
+      padding: 10px 20px;
+      margin-top: 10px;
       text-decoration: none;
-      font-size: 14px;
+      border-radius: 5px;
+      font-weight: bold;
     }
 
-    .contact-us {
+    footer {
+      background-color: #4a148c;
+      color: white;
+      text-align: center;
+      padding: 20px;
       margin-top: 50px;
-    }
-
-    .contact-us a {
-      background-color: #2563eb;
-      color: white;
-      padding: 12px 24px;
-      font-size: 16px;
-      text-decoration: none;
-      border-radius: 8px;
     }
   </style>
 </head>
 <body>
-  <h2>Our Products</h2>
-  <div class="product-gallery">
-    <div class="product">
-      <img src="https://img.eselt.de/img/18223205_Aj1KT93eDSYpE3pG/ad.jpg" alt="flower">
-      <div class="product-name">flower</div>
-      <a class="whatsapp-btn" href="https://wa.me/919074086052?text=I'm%20interested%20in%20Wooden%20Rosary" target="_blank">Enquire</a>
-    </div>
-    <div class="product">
-      <img src="https://img.eselt.de/img/18223204_EQs0O7JGqRfHYkwp/ad.jpg" alt="flower">
-      <div class="product-name">flower</div>
-      <a class="whatsapp-btn" href="https://wa.me/919074086052?text=I'm%20interested%20in%20Cross%20Stand" target="_blank">Enquire</a>
-    </div>
-    <div class="product">
-      <img src="https://img.eselt.de/img/18223206_vNihDVgKAk4DVkXs/ad.jpg" alt="flower">
-      <div class="product-name">flower</div>
-      <a class="whatsapp-btn" href="https://wa.me/919074086052?text=I'm%20interested%20in%20Holy%20Candle" target="_blank">Enquire</a>
-    </div>
-    <div class="product">
-      <img src="https://img.eselt.de/img/18223208_zOqrWxuOC6FUlnUH/ad.jpg" alt="flower">
-      <div class="product-name">flower</div>
-      <a class="whatsapp-btn" href="https://wa.me/919074086052?text=I'm%20interested%20in%20Bible%20flower" target="_blank">Enquire</a>
-    </div>
-    <div class="product">
-      <img src="https://img.eselt.de/img/18223207_M7QyQz1gHVluHFCo/ad.jpg" alt="statue">
-      <div class="product-name">statue</div>
-      <a class="whatsapp-btn" href="https://wa.me/919074086052?text=I'm%20interested%20in%20Wooden%20Stand" target="_blank">Enquire</a>
-    </div>
-    <div class="product">
-      <img src="https://img.eselt.de/img/18223216_vHtgX1UXBY5UEGoD/ad.jpg" alt="statue">
-      <div class="product-name">statue</div>
-      <a class="whatsapp-btn" href="https://wa.me/919074086052?text=I'm%20interested%20in%20Mini%20Cross" target="_blank">Enquire</a>
-    </div>
-    <div class="product">
-      <img src="https://img.eselt.de/img/18223217_pvc9HJe5XAOS4DNC/ad.jpg" alt="flower">
-      <div class="product-name">flower</div>
-      <a class="whatsapp-btn" href="https://wa.me/919074086052?text=I'm%20interested%20in%20Hanging%20flower" target="_blank">Enquire</a>
-    </div>
-    <div class="product">
-      <img src="https://img.eselt.de/img/18223218_MnM28PoGajhUTIjv/ad.jpg" alt="flower">
-      <div class="product-name">flower</div>
-      <a class="whatsapp-btn" href="https://wa.me/919074086052?text=I'm%20interested%20in%20Holy%20Card" target="_blank">Enquire</a>
-    </div>
-    <div class="product">
-      <img src="https://img.eselt.de/img/18223220_G7iebx9U70jD9EWE/ad.jpg" alt="flower">
-      <div class="product-name">flower</div>
-      <a class="whatsapp-btn" href="https://wa.me/919074086052?text=I'm%20interested%20in%20flower%20Poster" target="_blank">Enquire</a>
-    </div>
-    <div class="product">
-      <img src="https://img.eselt.de/img/18223219_gVBHWNza6wTui5Pi/ad.jpg" alt="flower">
-      <div class="product-name">flower</div>
-      <a class="whatsapp-btn" href="https://wa.me/919074086052?text=I'm%20interested%20in%20Prayer%20flower" target="_blank">Enquire</a>
-    </div>
-    <div class="product">
-      <img src="https://img.eselt.de/img/18223221_TdglmksL3iZPp115/ad.jpg" alt="flower">
-      <div class="product-name">flower</div>
-      <a class="whatsapp-btn" href="https://wa.me/919074086052?text=I'm%20interested%20in%20Mother%20Mary%20Frame" target="_blank">Enquire</a>
-    </div>
-    <div class="product">
-      <img src="https://img.eselt.de/img/18223222_htTF13IERuEB14a1/ad.jpg" alt="flower">
-      <div class="product-name">flower</div>
-      <a class="whatsapp-btn" href="https://wa.me/919074086052?text=I'm%20interested%20in%20Mini%20Crucifix" target="_blank">Enquire</a>
-    </div>
-    <div class="product">
-      <img src="https://img.eselt.de/img/18223223_Wf57mRyTanDsOQIA/ad.jpg" alt="flower">
-      <div class="product-name">flower</div>
-      <a class="whatsapp-btn" href="https://wa.me/919074086052?text=I'm%20interested%20in%20Wood%20Rosary%20flower" target="_blank">Enquire</a>
-    </div>
-    <div class="product">
-      <img src="https://img.eselt.de/img/18223224_7np34myHvUV5pbay/ad.jpg" alt="flower">
-      <div class="product-name">flower</div>
-      <a class="whatsapp-btn" href="https://wa.me/919074086052?text=I'm%20interested%20in%20Prayer%20Candle%20Pack" target="_blank">Enquire</a>
-    </div>
-    <div class="product">
-      <img src="https://img.eselt.de/img/18223225_1egBxsMsK1AqoVMx/ad.jpg" alt="flower">
-      <div class="product-name">Table flower</div>
-      <a class="whatsapp-btn" href="https://wa.me/919074086052?text=I'm%20interested%20in%20Table%20Crucifix" target="_blank">Enquire</a>
-    </div>
-    <div class="product">
-      <img src="https://img.eselt.de/img/18223226_pxcAeK4js8ERLKxN/ad.jpg" alt="flower">
-      <div class="product-name">flower</div>
-      <a class="whatsapp-btn" href="https://wa.me/919074086052?text=I'm%20interested%20in%20Decor%20flower" target="_blank">Enquire</a>
-    </div>
-    <div class="product">
-      <img src="https://img.eselt.de/img/18223227_490VQGcsMP5Kyi91/ad.jpg" alt="flower">
-      <div class="product-name">flower</div>
-      <a class="whatsapp-btn" href="https://wa.me/919074086052?text=I'm%20interested%20in%20Bible%20Table%20Frame" target="_blank">Enquire</a>
-    </div>
-    <div class="product">
-      <img src="https://img.eselt.de/img/18223228_FtXjUpNa8vrNUlW3/ad.jpg" alt="flower">
-      <div class="product-name">flower</div>
-      <a class="whatsapp-btn" href="https://wa.me/919074086052?text=I'm%20interested%20in%20Gift%20Combo%20Set" target="_blank">Enquire</a>
+
+<header>
+  <h1>Welcome to Di Adore</h1>
+  <p>Your Christian Devotional Store</p>
+</header>
+
+<nav>
+  <a href="#althar">Althar</a>
+  <a href="#statue">Statue</a>
+  <a href="#photo">Photo Frame</a>
+  <a href="#flower">Flower Vase</a>
+</nav>
+
+<div class="welcome">
+  <h2>Bring Faith to Every Corner of Your Home</h2>
+  <p>Explore our devotional products – handpicked for spiritual elegance.</p>
+</div>
+
+<div class="categories">
+  <div class="category-section" id="althar">
+    <h3 class="category-title">Althar</h3>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://i.ibb.co/nsyqZ5c/IMG-20240727-140600.jpg" alt="Althar Product">
+        <div class="product-name">Althar 1</div>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I'm%20interested%20in%20Althar%201" class="whatsapp-btn">WhatsApp</a>
+      </div>
+      <!-- Add more Althar products here -->
     </div>
   </div>
 
-  <div class="contact-us">
-    <h3>Have a question?</h3>
-    <a href="https://wa.me/919074086052?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20your%20products" target="_blank">Contact Us on WhatsApp</a>
+  <div class="category-section" id="statue">
+    <h3 class="category-title">Statue</h3>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://img.eselt.de/img/18223204_EQs0O7JGqRfHYkwp/ad.jpg" alt="Statue Product">
+        <div class="product-name">Statue 1</div>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I'm%20interested%20in%20Statue%201" class="whatsapp-btn">WhatsApp</a>
+      </div>
+    </div>
   </div>
+
+  <div class="category-section" id="photo">
+    <h3 class="category-title">Photo Frame</h3>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://img.eselt.de/img/18223206_vNihDVgKAk4DVkXs/ad.jpg" alt="Photo Frame">
+        <div class="product-name">Photo Frame 1</div>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I'm%20interested%20in%20Photo%20Frame%201" class="whatsapp-btn">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="category-section" id="flower">
+    <h3 class="category-title">Flower Vase</h3>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://img.eselt.de/img/18223207_M7QyQz1gHVluHFCo/ad.jpg" alt="Flower Vase">
+        <div class="product-name">Flower Vase 1</div>
+        <a href="https://wa.me/91XXXXXXXXXX?text=I'm%20interested%20in%20Flower%20Vase%201" class="whatsapp-btn">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Di Adore. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
